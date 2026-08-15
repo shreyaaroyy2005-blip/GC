@@ -4,7 +4,7 @@ import { assets } from '../../assets/assets'
 
 const Sidebar = () => {
 
-  const [extended, setExtended] = useState(true)
+  const [extended, setExtended] = useState(false)  //in this state we will strore the value of the sidebar whether extended or not.
 
   return (
     <div className='sidebar'>
@@ -15,7 +15,7 @@ const Sidebar = () => {
           className='menu-icon'
           src={assets.menu_icon}
           alt='Menu'
-          onClick={() => setExtended(prev => !prev)}
+          onClick={() => setExtended(prev => !prev)}  //when i will click on the sidebar menu icon,it will show us the content written,that was hidden(new chat,settings..etc)
         />
 
         <div className='new-chat'>
