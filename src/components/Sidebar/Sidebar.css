@@ -1,6 +1,6 @@
 .sidebar {
     min-height: 100vh;
-    display: inline-flex;
+    display: flex;
     flex-direction: column;
     justify-content: space-between;
     background-color: #f0f4f9;
@@ -12,13 +12,18 @@
 }
 
 .top {
-    display: block;
+    display: flex;
+    flex-direction: column;
     margin-left: 10px;
     cursor: pointer;
 }
 
+.menu-icon {
+    cursor: pointer;
+    margin-bottom: 35px;
+}
+
 .new-chat {
-    margin-top: 10px;
     display: inline-flex;
     align-items: center;
     gap: 10px;
@@ -28,6 +33,7 @@
     font-size: 14px;
     color: #282828;
     cursor: pointer;
+    width: fit-content;
 }
 
 .recent {
