@@ -1,11 +1,11 @@
-.main{
-    flex:1;
-    min-height: 100vh;
-    padding-bottom: 15vh;
+.main {
+    flex: 1;
+    height: 100vh;
+    overflow: hidden;
     position: relative;
 }
 
-.main .nav{
+.main .nav {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -14,36 +14,38 @@
     color: #585858;
 }
 
-.main .nav .img{
-    width:40px;
+.main .nav img {
+    width: 40px;
     border-radius: 50%;
 }
 
-.main-container{
-    max-width:900px;
-    margin:auto;
+.main-container {
+    max-width: 900px;
+    margin: auto;
 }
-.main .greet{
-    margin:50px 0px;
+
+.main .greet {
+    margin: 50px 0px;
     font-size: 56px;
-    color:#585858;
+    color: #585858;
     font-weight: 500;
-    pdding:20px;
+    padding: 20px;
 }
-.main .greet span{
+
+.main .greet span {
     background: -webkit-linear-gradient(16deg, #007bff, #ff5546);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
 
-.main .cards{
+.main .cards {
     display: grid;
-    grid-template-columns: repeat(autofill,minmax(180px,1fr));
+    grid-template-columns: repeat(4, 1fr);
     gap: 15px;
     padding: 20px;
 }
 
-.main .card{
+.main .card {
     height: 200px;
     padding: 15px;
     background-color: #f0f4f9;
